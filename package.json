@@ -3,7 +3,7 @@
   "files": [
     "./dist"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "module": "./dist/cyrus-ui.js",
   "main": "./dist/cyrus-ui.cjs",
