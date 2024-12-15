@@ -1,6 +1,6 @@
 {
   "name": "cyrus-ui",
-  "files": ["dist"],
+  "files": ["./dist"],
   "version": "0.0.0",
   "type": "module",
   "module": "./dist/cyrus-ui.js",
