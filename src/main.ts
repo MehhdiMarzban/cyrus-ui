@@ -1,1 +1,1 @@
-export * as CyrusUI from "./components";
+export { Button } from "./components";
