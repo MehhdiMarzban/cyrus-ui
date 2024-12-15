@@ -5,12 +5,12 @@
   ],
   "version": "0.0.3",
   "type": "module",
-  "module": "./dist/cyrus-ui.js",
-  "main": "./dist/cyrus-ui.cjs",
+  "module": "./dist/main.js",
+  "main": "./dist/main.cjs",
   "exports": {
     ".": {
-      "import": "./dist/cyrus-ui.js",
-      "require": "./dist/cyrus-ui.cjs"
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
     }
   },
   "scripts": {

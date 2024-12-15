@@ -12,7 +12,7 @@ export default defineConfig({
             formats: ["es", "cjs"],
             name: "cyrus-ui",
             // the proper extensions will be added
-            fileName: "cyrus-ui",
+            fileName: "main",
             cssFileName: "style",
         },
         rollupOptions: {
