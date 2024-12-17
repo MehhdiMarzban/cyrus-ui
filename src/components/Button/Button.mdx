@@ -1,0 +1,29 @@
+import { Meta, Title, Primary, Controls, Story, Stories ,  Canvas, Markdown } from "@storybook/blocks";
+import * as ButtonStories from "./Button.stories";
+
+<Title>Button</Title>
+
+# Button Component
+
+### this is a simple component to show a button with a beautiful style .
+
+<Meta of={ButtonStories} />
+
+a button is thing that you press in under to make stuff happen.
+
+<Primary />
+
+## Controlls
+
+buttons have lots of little things that you can tweak about them.
+
+<Controls />
+
+{/* canvas is for show in rectangle and can see code , and is like exacly in autodocs */}
+{/* <Canvas of={ButtonStories.secondary}/> */}
+
+{/* is like simple component is */}
+{/* <Story of={ButtonStories.secondary}/> */}
+
+<Stories meta={ButtonStories} />
+

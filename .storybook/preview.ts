@@ -1,6 +1,8 @@
+import { withThemeByDataAttribute } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/react";
 
 import "../src/style/component.css";
+
 const preview: Preview = {
     parameters: {
         controls: {
@@ -10,6 +12,18 @@ const preview: Preview = {
             },
         },
     },
+
+    decorators: [
+        withThemeByDataAttribute({
+            themes: {
+                // nameOfTheme: 'dataAttributeForTheme',
+                light: "light",
+                dark: "dark",
+            },
+            defaultTheme: "light",
+            attributeName: "data-mode",
+        }),
+    ],
 };
 
 export default preview;

@@ -1,14 +1,15 @@
-import ButtonProps from "./Button.type";
+import type ButtonProps from "./Button.type";
+import { buttonStyles } from "./Button.variants";
 
-const buttonVariant: Record<Required<ButtonProps>["variant"], string> = {
-    primary: "btn-primary",
-    secondary: "btn-secondary",
-    accent: "btn-accent",
-};
-
-const Button: React.FC<ButtonProps> = ({ children, variant = "primary", className, ...rest }) => {
+const Button: React.FC<ButtonProps> = ({
+    children,
+    variant = "primary",
+    size = "medium",
+    className,
+    ...otherProps
+}) => {
     return (
-        <button className={`btn ${buttonVariant[variant]} ${className}`} {...rest}>
+        <button className={buttonStyles({ variant, size, className })} {...otherProps}>
             {children}
         </button>
     );

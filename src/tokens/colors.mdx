@@ -1,0 +1,12 @@
+import { ColorPalette, ColorItem, Title } from "@storybook/blocks";
+import { black, white, colors, currentColor, transparent } from "./colors";
+
+<Title>Colors Palette</Title>
+
+<ColorPalette>
+    {Object.entries(colors)
+        .filter(([, value]) => typeof value !== "string")
+        .map(([name, value]) => (
+            <ColorItem key={name} title={name} colors={value} />
+        ))}
+</ColorPalette>

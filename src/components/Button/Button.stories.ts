@@ -8,21 +8,46 @@ const meta = {
     parameters: {
         layout: "centered",
     },
-    tags: ["autodocs"],
+    // tags: ["autodocs"],
     argTypes: {
         variant: {
             options: ["primary", "secondary", "accent"],
-            description: "primary | secondary | accent",
+            description: "you can choose one of this variant :",
             mapping: {
                 primary: "primary",
                 secondary: "secondary",
                 accent: "accent",
             },
+            table: {
+                type: {
+                    summary: "union",
+                    detail: "'primary' | 'secondary' | 'accent'",
+                },
+            },
             control: "select",
             type: "string",
         },
+        disabled: {
+            control: "boolean",
+            description: "you can disable button :",
+        },
+        size: {
+            control: "radio",
+            options: ["small", "medium", "large"],
+            description: "you can change size of button :",
+            table: {
+                type: {
+                    summary: "union",
+                    detail: "'small' | 'medium' | 'large'",
+                },
+            },
+        },
     },
-    args: {},
+    args: {
+        disabled: false,
+        size: "medium",
+        children: "button",
+    },
 } satisfies Meta<typeof Button>;
 export default meta;
 
@@ -47,6 +72,44 @@ export const accent: Story = {
     args: {
         children: "accent button",
         variant: "accent",
+    },
+};
+
+export const small: Story = {
+    args: {
+        size: "small",
+    },
+};
+
+export const medium: Story = {
+    args: {
+        size: "medium",
+    },
+};
+
+export const large: Story = {
+    args: {
+        size: "large",
+    },
+};
+
+export const darkMode: Story = {
+    parameters: {
+        themes: {
+            themeOverride: "dark",
+        },
+    },
+    args: {
+        children: "dark button",
+        variant: "primary",
+    },
+};
+
+export const mobileScreen: Story = {
+    parameters: {
+        viewport: {
+            defaultViewport: "mobile1",
+        },
     },
 };
 
