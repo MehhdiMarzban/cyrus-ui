@@ -3,7 +3,7 @@
   "files": [
     "./dist"
   ],
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "module": "./dist/main.js",
   "main": "./dist/main.cjs",
