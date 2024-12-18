@@ -7,7 +7,7 @@ const Button: React.FC<ButtonProps> = ({
     size = "medium",
     className,
     ...otherProps
-}) => {
+}: ButtonProps) => {
     return (
         <button className={buttonStyles({ variant, size, className })} {...otherProps}>
             {children}
