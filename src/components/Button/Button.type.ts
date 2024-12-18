@@ -1,6 +1,5 @@
 import { ButtonVariants } from "./Button.variants";
 
-interface Button extends React.ComponentProps<"button">, ButtonVariants {}
+interface ButtonProps extends ButtonVariants,React.ComponentProps<"button">  {}
 
-type ButtonProps = Readonly<Button>;
 export default ButtonProps;

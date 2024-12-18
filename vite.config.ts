@@ -27,8 +27,13 @@ export default defineConfig({
                     "react-dom": "ReactDOM"
                 },
             },
+            treeshake: true,
         },
-        minify: "esbuild"
+        minify: "esbuild",
+        cssMinify: true,
+        copyPublicDir: false,
+        cssCodeSplit: true,
+        
     },
     plugins: [react(), dts({tsconfigPath: "./tsconfig.app.json"}), cssInjectedByJsPlugin()],
 });
