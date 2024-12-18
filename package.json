@@ -6,6 +6,7 @@
     "version": "0.0.10",
     "type": "module",
     "types": "./dist/main.d.ts",
+    "typings": "./dist/main.d.ts",
     "module": "./dist/main.js",
     "main": "./dist/main.cjs",
     "exports": {
