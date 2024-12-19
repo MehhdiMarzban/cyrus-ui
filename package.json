@@ -4,7 +4,7 @@
     "./dist",
     "./src"
   ],
-  "version": "0.0.14",
+  "version": "0.0.15",
   "type": "module",
   "types": "./dist/main.d.ts",
   "typings": "./dist/main.d.ts",
