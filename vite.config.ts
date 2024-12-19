@@ -29,7 +29,7 @@ export default defineConfig({
             },
             treeshake: true,
         },
-        // minify: "esbuild",
+        minify: "esbuild",
         // cssMinify: true,
         // copyPublicDir: false,
         // cssCodeSplit: true,

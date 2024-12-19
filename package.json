@@ -1,72 +1,75 @@
 {
-    "name": "cyrus-ui",
-    "files": [
-        "./dist",
-        "./src"
-    ],
-    "version": "0.0.14",
-    "type": "module",
-    "types": "./dist/main.d.ts",
-    "typings": "./dist/main.d.ts",
-    "module": "./dist/main.js",
-    "main": "./dist/main.cjs",
-    "exports": {
-        ".": {
-            "import": "./dist/main.js",
-            "require": "./dist/main.cjs"
-        }
-    },
-    "scripts": {
-        "dev": "vite",
-        "build": "tsc -b && vite build",
-        "lint": "eslint .",
-        "preview": "vite preview",
-        "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
-    },
-    "peerDependencies": {
-        "react": ">= ^18.3.1",
-        "react-dom": ">= ^18.3.1"
-    },
-    "devDependencies": {
-        "@chromatic-com/storybook": "^3.2.2",
-        "@eslint/js": "^9.15.0",
-        "@storybook/addon-docs": "^8.4.7",
-        "@storybook/addon-essentials": "^8.4.7",
-        "@storybook/addon-interactions": "^8.4.7",
-        "@storybook/addon-onboarding": "^8.4.7",
-        "@storybook/addon-themes": "^8.4.7",
-        "@storybook/blocks": "^8.4.7",
-        "@storybook/react": "^8.4.7",
-        "@storybook/react-vite": "^8.4.7",
-        "@storybook/test": "^8.4.7",
-        "@types/node": "^22.10.2",
-        "@types/react": "^18.3.12",
-        "@types/react-dom": "^18.3.1",
-        "@vitejs/plugin-react": "^4.3.4",
-        "autoprefixer": "^10.4.20",
-        "clsx": "^2.1.1",
-        "eslint": "^9.15.0",
-        "eslint-plugin-react-hooks": "^5.0.0",
-        "eslint-plugin-react-refresh": "^0.4.14",
-        "eslint-plugin-storybook": "^0.11.1",
-        "globals": "^15.12.0",
-        "path": "^0.12.7",
-        "postcss": "^8.4.49",
-        "storybook": "^8.4.7",
-        "tailwindcss": "^3.4.16",
-        "typescript": "~5.6.2",
-        "typescript-eslint": "^8.15.0",
-        "vite": "^6.0.1",
-        "vite-plugin-css-injected-by-js": "^3.5.2",
-        "vite-plugin-dts": "^4.3.0"
-    },
-    "eslintConfig": {
-        "extends": [
-            "plugin:storybook/recommended"
-        ]
-    },
-    "dependencies": {
-        "class-variance-authority": "^0.7.1"
+  "name": "cyrus-ui",
+  "files": [
+    "./dist",
+    "./src"
+  ],
+  "version": "0.0.14",
+  "type": "module",
+  "types": "./dist/main.d.ts",
+  "typings": "./dist/main.d.ts",
+  "module": "./dist/main.js",
+  "main": "./dist/main.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
     }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "storybook-docs": "storybook dev --docs",
+    "build-storybook": "storybook build",
+    "build-storybook-docs": "storybook build --docs"
+  },
+  "peerDependencies": {
+    "react": ">= ^18.3.1",
+    "react-dom": ">= ^18.3.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@eslint/js": "^9.15.0",
+    "@storybook/addon-docs": "^8.4.7",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/addon-themes": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "chromatic": "^11.20.2",
+    "clsx": "^2.1.1",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint-plugin-storybook": "^0.11.1",
+    "globals": "^15.12.0",
+    "path": "^0.12.7",
+    "postcss": "^8.4.49",
+    "storybook": "^8.4.7",
+    "tailwindcss": "^3.4.16",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.15.0",
+    "vite": "^6.0.1",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.3.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1"
+  }
 }
