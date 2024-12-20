@@ -31,7 +31,7 @@ export default defineConfig({
         },
         minify: "esbuild",
         // cssMinify: true,
-        // copyPublicDir: false,
+        copyPublicDir: false,
         // cssCodeSplit: true,
         
     },
