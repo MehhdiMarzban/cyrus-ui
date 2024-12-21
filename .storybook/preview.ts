@@ -12,7 +12,7 @@ const preview: Preview = {
             },
         },
     },
-
+    globalTypes: {},
     decorators: [
         withThemeByDataAttribute({
             themes: {

@@ -35,5 +35,5 @@ export default defineConfig({
         // cssCodeSplit: true,
         
     },
-    plugins: [react(), dts({tsconfigPath: "./tsconfig.app.json"}), cssInjectedByJsPlugin()],
+    plugins: [react(), dts({tsconfigPath: "./tsconfig.app.json"}), cssInjectedByJsPlugin({})],
 });
