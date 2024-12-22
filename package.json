@@ -4,6 +4,7 @@
     "./dist",
     "./src"
   ],
+  "keywords": ["cyrus-ui", "react", "component", "tailwind component", "ui", "tailwindcss"],
   "version": "0.0.17",
   "type": "module",
   "types": "./dist/main.d.ts",
