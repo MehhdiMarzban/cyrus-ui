@@ -25,5 +25,5 @@
         "noUncheckedSideEffectImports": true
     },
     "include": ["src"],
-    "exclude": ["./src/**/*.stories.{ts, tsx, js, jsx}"]
+    "exclude": ["./src/**/*.stories.{ts, tsx, js, jsx}", ".mdx"]
 }

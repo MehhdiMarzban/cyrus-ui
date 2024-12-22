@@ -1,3 +1,10 @@
+let customizedColors = {};
+try {
+    customizedColors = require("../../cyrus-ui.config.ts").colors;
+} catch (e) {
+    customizedColors = {};
+}
+
 export const colors = {
     primary: {
         "50": "#faf7fd",
@@ -103,6 +110,7 @@ export const colors = {
         "900": "#343a46",
         "950": "#23272e",
     },
+    ...customizedColors
 };
 
 export const white = "#ffffff";
