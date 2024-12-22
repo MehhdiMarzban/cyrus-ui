@@ -1,0 +1,30 @@
+import { Title, Subheading, Subtitle, Meta, Primary, Controls, Stories, Markdown } from "@storybook/blocks";
+import * as BadgeStories from "./Badge.stories";
+
+<Meta of={BadgeStories} />
+
+<Title>Badge</Title>
+---
+<Subtitle>In UI/UX design, a badge is often a small visual indicator that conveys information about a particular item or status. Badges can be used for: </Subtitle>
+
+-  **Notifications**: Indicating the number of unread messages, alerts, or notifications (e.g., a small red circle with a number on an icon).
+-  **Status Indicators**: Showing the status of a user or item (e.g., online/offline status).
+-  **Achievements**: Displaying achievements or milestones (e.g., “New User,” “Pro Member”).
+
+<Subheading>Usage :</Subheading>
+
+```javascript
+import { Badge } from "cyrus-ui";
+
+    const App = () => {
+        return <Badge variant="success" >cyrus-ui</Badge>;
+    }
+
+export default App;
+```
+
+<Primary />
+
+<Controls />
+
+<Stories title="All models" />

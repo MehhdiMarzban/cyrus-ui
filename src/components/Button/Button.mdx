@@ -1,13 +1,36 @@
-import { Meta, Title, Primary, Controls, Story, Stories ,  Canvas, Markdown } from "@storybook/blocks";
+import {
+    Meta,
+    Title,
+    Subtitle,
+    Subheading,
+    Primary,
+    Controls,
+    Story,
+    Stories,
+    Canvas,
+    Markdown,
+} from "@storybook/blocks";
 import * as ButtonStories from "./Button.stories";
-
-<Title>Button</Title>
-
-### this is a simple component to show a button with a beautiful style .
 
 <Meta of={ButtonStories} />
 
+## <Title>Button</Title>
+
+<Subtitle> this is a simple component to show a button with a beautiful style . </Subtitle>
+
 a button is thing that you press in under to make stuff happen.
+
+<Subheading>Usage :</Subheading>
+
+```javascript
+import { Button } from "cyrus-ui";
+
+    const App = () => {
+        return <Button variant="primary" size="large">cyrus-ui</Button>;
+    }
+
+export default App;
+```
 
 <Primary />
 
@@ -23,5 +46,4 @@ buttons have lots of little things that you can tweak about them.
 {/* is like simple component is */}
 {/* <Story of={ButtonStories.secondary}/> */}
 
-<Stories meta={ButtonStories} />
-
+<Stories meta={ButtonStories} title="All models" />
