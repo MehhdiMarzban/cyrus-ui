@@ -4,6 +4,7 @@
     "./dist",
     "./src"
   ],
+  "license": "MIT",
   "keywords": [
     "cyrus-ui",
     "react",
