@@ -12,7 +12,7 @@
     "ui",
     "tailwindcss"
   ],
-  "version": "0.0.18",
+  "version": "0.0.19",
   "type": "module",
   "types": "./dist/main.d.ts",
   "typings": "./dist/main.d.ts",
